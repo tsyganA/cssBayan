@@ -1,0 +1,52 @@
+body {
+    margin: 0 auto;
+    width: 400px;
+}
+
+
+.balance_img {
+    width: 375px;
+    height: 270px;
+}
+
+.where_js_img {
+    width: 375px;
+    height: 270px;
+}
+
+.relax_img {
+    width: 375px;
+    height: 270px;
+}
+
+
+.meme_block:not(:hover) .meme_img {
+    height: 0;
+    opacity: 0;
+    visibility: visible;
+}
+
+/* .you_cant_img:has(input:checked).you_cant_img {
+    height: 520px;
+    opacity: 1;
+    visibility: visible;
+} */
+
+ .meme_block input:checked ~ .meme_img {
+    height: 270px;
+    opacity: 1;
+    visibility: visible;
+}    
+
+/* .meme_img {
+    height: 0;
+}  */
+
+/* .name_accord:checked {
+    background-color: #db2c2c;
+} */
+
+input {
+    display: none;
+}
+
