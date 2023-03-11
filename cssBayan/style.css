@@ -33,7 +33,7 @@ body {
 } */
 
  .meme_block input:checked ~ .meme_img {
-    height: 270px;
+    height: 17em;
     opacity: 1;
     visibility: visible;
 }    
@@ -48,5 +48,39 @@ body {
 
 input {
     display: none;
+}
+
+/* label p {
+    border-top: 0.025em solid #a1a1a1;
+} */
+
+.cross {
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: #717171;
+    transition: 0.5s;
+}
+
+.all_cross {
+    margin-top: 1em;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.025em solid #a1a1a1;
+}
+
+.cross:nth-of-type(2) {
+    transform: translateY(-2px) rotate(0.25turn);
+}
+
+.meme_block:hover .cross:nth-of-type(1), label input:checked ~ .cross:nth-of-type(1) {
+    transform: translateY(-2px) rotate(-0.13turn);
+}
+
+.meme_block:hover .cross:nth-of-type(2), label input:checked ~ .cross:nth-of-type(2)  {
+    transform: translateY(-3px) rotate(0.12turn);
 }
 
