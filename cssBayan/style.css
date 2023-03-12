@@ -1,0 +1,169 @@
+html {
+    margin: 0;
+}
+
+body {
+    margin: 2em 0;
+    min-height: 105vh;
+    background-color: #F6F6EC;
+}
+
+.all {
+    margin: 0 auto;
+    max-width: 75vw;
+ }
+
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 50px;
+    color: #000000;
+}
+
+.row p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #1900ff;
+    margin-bottom: 0;
+}
+
+.all_accord:hover p {
+    color: #000000;
+}
+
+.balance_img {
+    width: 375px;
+    height: 270px;
+}
+
+.where_js_img {
+    width: 375px;
+    height: 270px;
+}
+
+.relax_img {
+    width: 375px;
+    height: 270px;
+}
+
+
+.meme_block:not(:hover) .meme_img {
+    height: 0;
+    opacity: 0;
+    visibility: visible;
+}
+
+.meme_block:hover .meme_img {
+    margin-top: 1em;
+}
+
+.meme_block input:checked ~ .meme_img {
+    height: 17em;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 1em;
+}    
+
+.meme_block {
+    cursor: pointer;
+}
+
+.all_accord input:checked ~ .row p  {
+    color: #000000;
+}   
+
+.meme_img {
+    text-align: center;
+    margin-bottom: 1.5em;
+
+} 
+
+input {
+    display: none;
+}
+
+.cross {
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+.all_cross {
+    margin-top: 2.3em;
+    opacity: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.025em solid #a1a1a1;
+}
+
+.cross:nth-of-type(2) {
+    transform: translateY(-2px) rotate(0.25turn);
+}
+
+.meme_block:hover .cross:nth-of-type(1) {
+    transform: translateY(-2px) rotate(-0.13turn);
+}
+
+.meme_block:hover .cross:nth-of-type(2) {
+    transform: translateY(-3px) rotate(0.12turn);
+}
+
+.all_accord:hover .all_cross {
+    opacity: 1;
+}
+
+
+
+
+
+@media screen and (max-width: 1100px){
+
+.meme_block input:checked ~ .meme_img {
+    height: 17em;
+}    
+
+.row p {
+    font-size: 22px;
+}
+
+h1 {
+    font-size: 40px;
+}    
+
+}    
+
+
+
+
+
+@media screen and (max-width: 580px) {
+
+.all {
+    max-width: 16rem;
+}  
+
+.meme_img img{
+    width: 200px;
+    height: 200px;
+}
+
+.meme_block input:checked ~ .meme_img {
+    height: 12em;
+}    
+
+.row p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 25px;
+}    
+
+}
