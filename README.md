@@ -1,1 +1,1 @@
-https://tsygana.github.io/cssBayan/cssBayan/index.html
+https://tsygana.github.io/cssBayan/cssBayan/
